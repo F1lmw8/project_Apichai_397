@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package movie;
+
+service MovieService {
+  rpc GetMovie (MovieRequest) returns (MovieReply);
+}
+
+message MovieRequest {
+  int32 movie_id = 1;
+}
+
+message MovieReply {
+  string title = 1;
+  string director = 2;
+  int32 year = 3;
+  string genre = 4;
+}
