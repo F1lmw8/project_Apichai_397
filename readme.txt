@@ -55,3 +55,39 @@
 3. ดูหนังเรื่องอื่นผ่าน Service B
    - URL: http://localhost:8001/movie/{id}
    - ตัวอย่าง: http://localhost:8001/movie/1 (Shawshank Redemption)
+
+
+------------------------------
+         tree
+.
+├── docker-compose.yml
+├── readme.txt
+├── requirements.txt
+├── service_a
+│   ├── Dockerfile
+│   ├── grpc_server.py
+│   ├── main.py
+│   ├── movie_pb2.py
+│   ├── movie_pb2_grpc.py
+│   ├── proto
+│   │   └── movie.proto
+│   ├── user_pb2.py
+│   └── user_pb2_grpc.py
+├── service_b
+│   ├── Dockerfile
+│   ├── grpc_client.py
+│   ├── main.py
+│   ├── movie_pb2.py
+│   ├── movie_pb2_grpc.py
+│   ├── proto
+│   │   └── user.proto
+│   ├── user_pb2.py
+│   └── user_pb2_grpc.py
+└── service_c
+    ├── Dockerfile
+    ├── grpc_client.py
+    ├── main.py
+    ├── movie_pb2.py
+    └── movie_pb2_grpc.py
+
+6 directories, 24 files
